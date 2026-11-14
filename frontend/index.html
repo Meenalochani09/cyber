@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TRACELYT AI — Investigation Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar"><div class="brand"><span>TRACELYT</span> AI <small>● ONLINE // ENCRYPTED</small></div><div class="searchbox">⌕ <input id="globalSearch" placeholder="Search cases, phone numbers, UPI IDs, URLs..."><kbd>Ctrl + K</kbd></div><div class="feed">● FEEDS: <b>LOCAL ANALYSIS</b></div><button class="primary" id="topNew">＋ New Investigation</button><button class="iconbtn" id="refreshBtn" title="Refresh">↻</button></header>
+  <aside class="sidebar">
+    <div class="navlabel">INVESTIGATION WORKSPACE</div>
+    <button class="nav active" data-page="overview">▦ <span>Overview / Command</span></button>
+    <button class="nav" data-page="new">✣ <span>New Investigation</span><em>WIZARD</em></button>
+    <button class="nav" data-page="cases">▣ <span>My Cases</span><em id="caseCount">—</em></button>
+    <button class="nav" data-page="evidence">♧ <span>Evidence Vault</span><em>SMS/WA</em></button>
+    <div class="navlabel">ANALYTICS & GRAPH</div>
+    <button class="nav" data-page="summary">☰ <span>Case Summary</span></button>
+    <button class="nav" data-page="graph">✿ <span>Relationship Graph</span></button>
+    <button class="nav" data-page="timeline">⌁ <span>Scam Timeline</span></button>
+    <button class="nav" data-page="threat">⬡ <span>Threat Findings</span></button>
+    <div class="navlabel">GOVERNANCE & OUTPUT</div>
+    <button class="nav" data-page="report">▤ <span>Case Reports</span></button>
+    <button class="nav" data-page="actions">☑ <span>Action Centre</span></button>
+    <button class="nav" data-page="settings">☷ <span>Settings</span></button>
+    <div class="dbcard"><div>▤ POSTGRESQL // AIVEN <b>API STATUS</b></div><p id="dbStatus">Checking backend…</p><div class="bar"><i></i></div><small>REAL DATA WHEN CONNECTED · NO SILENT DEMO DATA</small></div>
+  </aside>
+  <main id="main" class="main"><div class="loading">Connecting to TRACELYT backend…</div></main>
+</div>
+<div id="toast" class="toast"></div>
+<script src="insight.js"></script>
+<script src="app.js"></script>
+</body></html>
